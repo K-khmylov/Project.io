@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+   all: unset;
+   display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul {
+   list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+   max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+   border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+   white-space: revert;
+}
+
+
+
+
+
+body{
+    background-color: #333333;
+}
+
+header{
+    background-image: url(main-screen__bgc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+	height: 750px;
+    margin-top: 0px;
+}
+
+.link{
+    display: flex;
+   
+}
+
+.nav{
+    margin-left: 165px;
+    stroke-width: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+    margin-top: -32px;
+    
+    
+}
+
+.a_header{
+    margin-left: 15px;
+    opacity: 0.7;
+    transition: 0.2s linear;
+}
+
+.a_header:hover{
+    opacity: 1;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.img_logo{
+    margin-left: 50px;
+    margin-top: 15px;
+    
+}
+
+.main_logo_text{
+    width: 920px;
+    height: 180px;
+    margin-left: 82px;
+    margin-top: 120px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 140%;
+    color: white;
+}
+
+.date1, .date2, .date3, .date4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    position: absolute;
+    width: 102px;
+    height: 112px;
+    left: 82px;
+    top: 370px;
+    background: #121212;
+    height: 112px;
+    left: 82px;
+    top: 370px;
+}
+
+.date2{
+    width: 107px;
+    height: 112px;
+    left: 202px;         
+}
+
+.date3{
+    width: 102px;
+    height: 112px;
+    left: 325px;
+}
+
+.date4{
+    width: 102px;
+    height: 112px;
+    left: 442px;
+}
+
+.number{
+    position: static;
+    width: 42px;
+    height: 50px;
+    left: 32.5px;
+    top: 21px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.under_date{
+    position: static;
+    width: 47px;
+    height: 22px;
+    left: 20px;
+    top: 70px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;  
+    opacity: 0.4;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.under_header{
+    background-color: #121212;
+    width: 100%;
+    height: 140px;
+    margin-top: 240px;
+    color: white;
+    
+}
+
+
+.buy_cours{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    position: absolute;
+    width: 169px;
+    height: 44px;
+    margin-left: 190px;
+    margin-top: 50px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+
+    transition:  0.2s ease-in;
+}
+
+.buy_cours:hover{
+    background: linear-gradient(94.78deg, #df5a50b9 11.19%, #451046b6 93.72%);
+
+}
