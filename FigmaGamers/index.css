@@ -183,7 +183,7 @@ header{
 
 
 .buy_cours{
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -198,15 +198,124 @@ header{
     position: absolute;
     width: 169px;
     height: 44px;
-    margin-left: 190px;
+    margin-left: 120px;
     margin-top: 50px;
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
     border-radius: 50px;
 
     transition:  0.2s ease-in;
+    /* transition doen't work*/
 }
 
 .buy_cours:hover{
     background: linear-gradient(94.78deg, #df5a50b9 11.19%, #451046b6 93.72%);
 
+}
+
+.contestants{
+    display: flex;
+    margin-left: 330px;
+    width: 350px;
+    padding-top: 49px;
+   
+
+
+}
+
+.contestants_line1{
+    margin-bottom: 11px;
+
+}
+
+.contestants_block{
+    margin-bottom: 150px;
+    margin-left: 50px; /*50*/
+}
+
+.number_line1{
+    margin-bottom: 11px;
+
+}
+.contestants_line1, .contestants_line2{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.4;
+    line-height: 150%;
+}
+
+.number_line1, .number_line2{
+    font-family: Robot, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.money_line{
+    display: flex;
+    margin-left: 735px;
+    margin-top: -210px;
+    width: 605px;
+
+}
+
+.earn_of_contestnts{
+    left: 894px;
+    top: 865px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: .4;
+}
+
+.number_earn_of_contestnts{
+    margin-left: 33px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.line_of_money{
+    margin-top: 27px;
+    margin-left: -270px;
+    background-color: wheat;
+    width: 500px;
+    height: 7px;
+}
+
+.line_of_money_with_color{
+    width: 200px;
+    height: 7px;
+    background-color: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);  /* не работает*/
+    background-color: rgb(53, 53, 219);
+}
+
+.under_money_line{
+    margin-top: 2px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: .4;
+}
+.under_money_line2{
+    margin-left: 416px;
+    margin-top: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
 }
