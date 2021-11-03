@@ -37,7 +37,7 @@ textarea {
 
 
 body{
-    background-color: #333333;
+    background-color: #110c0c;
 }
 
 header{
@@ -198,7 +198,7 @@ header{
     position: absolute;
     width: 169px;
     height: 44px;
-    margin-left: 120px;
+    margin-left: 90px;
     margin-top: 50px;
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
     border-radius: 50px;
@@ -214,7 +214,7 @@ header{
 
 .contestants{
     display: flex;
-    margin-left: 330px;
+    margin-left: 300px;
     width: 350px;
     padding-top: 49px;
    
@@ -229,7 +229,7 @@ header{
 
 .contestants_block{
     margin-bottom: 150px;
-    margin-left: 50px; /*50*/
+    margin-left: 37px; /*50*/
 }
 
 .number_line1{
@@ -256,7 +256,7 @@ header{
 
 .money_line{
     display: flex;
-    margin-left: 735px;
+    margin-left: 683px;
     margin-top: -210px;
     width: 605px;
 
@@ -288,12 +288,12 @@ header{
     margin-top: 27px;
     margin-left: -270px;
     background-color: wheat;
-    width: 500px;
+    width: 550px;
     height: 7px;
 }
 
 .line_of_money_with_color{
-    width: 200px;
+    width: 250px;
     height: 7px;
     background-color: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);  /* не работает*/
     background-color: rgb(53, 53, 219);
@@ -309,13 +309,58 @@ header{
     color: #FFFFFF;
     opacity: .4;
 }
+
 .under_money_line2{
-    margin-left: 416px;
+    margin-left: 465px;
     margin-top: 0px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 150%;
+    color: #FFFFFF;
+}
+
+.square{
+    margin-top: 40px;
+    margin-left: 90px;
+    width: 500px;
+    height: 510px;
+    background-color:   none;
+    border-radius: 0px;
+    border-width: 30px;
+    border-style: solid;
+    border-color: linear-gradient( rgba(200, 154, 252, 1), rgba(124, 106, 250, 1)); /*не рабоатет*/
+    border-color: rgb(190, 31, 190);
+}
+
+.computer{
+    margin-top: -450px;
+    margin-left: 115px;
+}
+
+.computer_text{
+    margin-left: 680px;
+    margin-top: -480px;
+    width: 650px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.computer_text_second{
+    word-spacing: 5px;
+    letter-spacing: 1.3px;
+    width: 570px;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
     color: #FFFFFF;
 }
