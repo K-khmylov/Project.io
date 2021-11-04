@@ -41,15 +41,21 @@ body{
 }
 
 header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url(main-screen__bgc.png);
     background-size: contain;
     background-repeat: no-repeat;
     max-width: 100%;
 	height: 750px;
-    margin-top: 0px;
+    
+ 
 }
 
-.link{
+.links{
+
+    margin-top: 20px;
     display: flex;
    
 }
@@ -59,7 +65,7 @@ header{
     stroke-width: 5px;
     cursor: pointer;
     text-transform: uppercase;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -75,14 +81,21 @@ header{
     transition: 0.2s linear;
 }
 
-.a_header:hover{
+.a_header1{
+    margin-left: 80px;
+    opacity: 0.7;
+    transition: 0.2s linear;
+}
+
+
+.a_header:hover, .a_header1:hover{
     opacity: 1;
     border-bottom: 1px solid rgb(255, 255, 255);
 }
 
-.img_logo{
-    margin-left: 50px;
-    margin-top: 15px;
+.img_logo{  
+    margin-left: -80px;
+    margin-top: 20px;
     
 }
 
@@ -172,9 +185,17 @@ header{
     margin: 0px 0px;
 }
 
+/*===============================================================UnderHeader=============*/
+
 .under_header{
+    display: flex;
+    flex-wrap: wrap;
     background-color: #121212;
     width: 100%;
+    max-width: 1502px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
     height: 140px;
     margin-top: 240px;
     color: white;
@@ -214,6 +235,7 @@ header{
 
 .contestants{
     display: flex;
+    flex-wrap: wrap;
     margin-left: 300px;
     width: 350px;
     padding-top: 49px;
@@ -234,8 +256,9 @@ header{
 
 .number_line1{
     margin-bottom: 11px;
-
+    
 }
+
 .contestants_line1, .contestants_line2{
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -265,7 +288,7 @@ header{
 .earn_of_contestnts{
     left: 894px;
     top: 865px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -276,7 +299,7 @@ header{
 
 .number_earn_of_contestnts{
     margin-left: 33px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -295,13 +318,12 @@ header{
 .line_of_money_with_color{
     width: 250px;
     height: 7px;
-    background-color: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);  /* не работает*/
-    background-color: rgb(53, 53, 219);
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%); 
 }
 
 .under_money_line{
     margin-top: 2px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -321,16 +343,18 @@ header{
     color: #FFFFFF;
 }
 
+/*=============================================================Computer=========================*/
+
 .square{
     margin-top: 40px;
     margin-left: 90px;
     width: 500px;
     height: 510px;
-    background-color:   none;
+    background-color: none;
     border-radius: 0px;
     border-width: 30px;
     border-style: solid;
-    border-color: linear-gradient( rgba(200, 154, 252, 1), rgba(124, 106, 250, 1)); /*не рабоатет*/
+    border-color: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%); /*не рабоатет*/
     border-color: rgb(190, 31, 190);
 }
 
@@ -357,10 +381,319 @@ header{
     width: 570px;
     margin-left: 0px;
     margin-top: 20px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 160%;
     color: #FFFFFF;
 }
+
+/*=====================================================QuicklyStart============================*/
+
+.under_computer_block{
+    margin-left: 90px;
+    margin-top: 300px;
+    
+    
+}
+
+.text_near_the_logog_under_computer_block{
+    margin-left: 20px;
+    font-family: Roboto, sans-serif90;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 140%;
+    color: #FFFFFF;
+
+}
+
+.under_computer_logo_text{
+    margin-top: 15px;
+    margin-bottom: 60px;
+    width: 385px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: .5;
+}
+/*
+.line_of_progress{
+    display: flex;
+    margin-top: 80px;
+}
+
+.first_block_of_progress{
+    width: 320px;
+}
+
+.percent_of_progress{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.photo1_of_progress{
+    width: 320px;
+    height: 80px;
+    margin-top: 20px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
+.discription_under_the_photo{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: .5;
+    margin-top: 20px;
+}
+
+.second_block_of_progress{
+    width: 320px;
+    margin-left: 330px;
+    margin-top: -370px;
+}
+
+.photo2_of_progress{
+    width: 320px;
+    height: 60px;
+    margin-top: 20px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}*/
+
+.percent{
+    display: flex;
+    margin-left: 109px;
+    word-spacing: 190px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.first_precent{
+    margin-left: -112px;
+}
+.second_precent{
+    margin-left: 200px;
+}
+
+.third_precent{
+    margin-left: 217px;
+}
+.photo_of_progress{
+    display: flex;
+}
+.first_photo{
+    width: 287.5px;
+    height: 80px;
+    margin-top: 20px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
+.second_photo{
+    margin-left: -1px;
+    width: 287.5px;
+    height: 60px;
+    margin-top: 30px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);   
+}
+
+.third_photo{
+    margin-left: -1px;
+    width: 287.5px;
+    height: 40px;
+    margin-top: 40px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    
+}
+
+.fourth_photo{
+    margin-left: -1px;
+    width: 287.5px;
+    height: 20px;
+    margin-top: 50px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);   
+}
+
+.text_under_progress_photo{
+    margin-top: 30px;
+    display: flex;
+}
+
+.text_under_progress_photo__, .text_under_progress_photo__p{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: .5;
+    width: 267.5px;
+}
+
+.text_under_progress_photo__p{
+    margin-left: 20px;
+}
+
+/*=====================================================GetProfession============================*/
+
+.main_text_about_feature_profession{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: -158px;
+    margin-top: 120px;
+    
+}
+
+.get_profession_now{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 90px;
+    
+}
+
+.computer1_svg{
+    margin-left: 40px;
+} 
+.computer2_svg{
+    margin-left: 40px;
+} 
+.computer3_svg{
+    margin-left: 40px;
+} 
+
+
+.first_type_of_profession{
+    margin-top: 15px;
+    margin-left: 89.75px;
+    width: 200px;
+    
+}
+
+
+.second_type_of_profession{
+    margin-top: 15px;
+    margin-left: 207px;
+    width: 200px;
+    
+}
+
+/*
+.third_type_of_profession{
+    margin-top: 15px;
+    margin-left: 207px;
+    width: 200px;
+   
+    
+}
+*/
+
+
+.main_description1{
+    margin-top: 10px;
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    margin-left: -90px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 350px;
+}   
+
+.main_description2{
+    margin-top: 10px;
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    margin-left: -90px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 350px;
+}  
+/*
+.main_description3{
+    margin-top: 10px;
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    margin-left: -90px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 350px;
+   
+}  
+*/
+.description_of_type_of_work1{
+    margin-left: 30px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    margin-top: 20px;
+    margin-left: -90px;
+    color: #FFFFFF;
+    opacity: .5;
+    text-align:center;
+    width: 345px;
+
+}    
+
+.description_of_type_of_work2{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    margin-top: 20px;
+    margin-left: -90px;
+    color: #FFFFFF;
+    opacity: .5;
+    text-align:center;
+    width: 345px;
+
+}    
+/*
+.description_of_type_of_work3{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    margin-top: 20px;
+    margin-left: -90px;
+    color: #FFFFFF;
+    opacity: .5;
+    text-align:center;
+    width: 345px;
+
+}    
+*/
