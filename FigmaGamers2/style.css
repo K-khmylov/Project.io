@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+.page_wraper{
+    max-width: 1920px;
+    margin: 0 auto;
+    
+}
+
+.wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header{
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 32px;
+    position: fixed;
+    top: 0;
+}
+
+.header_wraper{
+    width: 100%;
+    max-width: 1760px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 0;
+}
+
+
+header .navigation{
+    display: flex;
+    column-gap: 56px;
+}
+
+header .navigation .nav_link{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-align: center;
+    opacity: .7;
+    transition: all 0.3s;
+}
+
+header .navigation .nav_link:hover{
+    opacity: 1;
+}
+
+header .btn{
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-align: center;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: all 0.3s;
+}
+
+
+header .btn:hover{
+    transform: scale(1.01);
+    background: linear-gradient(94.26deg, #a26ce0 9.51%, #4835c9 90.23%);
+}
+
+.head_block{
+    background-image: url(assets/main-screen__bgc.png);
+    background-position: center;
+    background-size: cover;
+    padding: 270px 32px 218px 32px;
+    
+}
+
+.head_block .title{
+    max-width: 920px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.head_block .date-block{
+    display: flex;
+    column-gap: 30px;
+    
+}
+
+.head_block .date-block .date{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color:  #121212;
+    
+}
+
+.head_block .date-block .date .date_number{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.head_block .date-block .date .date_description{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF; 
+    opacity: 0.4; 
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1048px){
+    header .navigation, header .btn{
+        background: none;
+    }
+}
+    
+
