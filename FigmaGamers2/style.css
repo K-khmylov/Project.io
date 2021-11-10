@@ -121,10 +121,85 @@ header .btn:hover{
     opacity: 0.4; 
 }
 
+.under_head_block{
+    height: 130px;
+    background-color:#201c1c ;
+}
 
+.bought_course{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    width: 169px;
+    height: 44px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    transition: backgroud 0.3s;
+}
 
+.bought_course:hover{
+    background: linear-gradient(94.78deg, #a53830 11.19%, #3c093d 93.72%);
+}
 
+.contestants{
+    display: flex;
+    width: 251px;
+    height: 58px;
+    padding: 36px 62px;
+    margin-left: 562px;
+}
 
+.all_contestnts, .done_course_contestnts{
+   
+}
+
+.all_contestnts_number, .done_course_contestnts_number{
+    max-width: 28px;
+    max-height: 24px;   
+}
+
+.all_contestnts{
+    max-width: 122px;
+    max-height: 24px;
+}
+
+.done_course_contestnts{
+    max-width: 193px;
+    max-height: 24px;
+}
+
+.number_of_contestants{
+    right: 0;
+}
+
+.all_contestnts, .done_course_contestnts, .money_of_contestants, .from_0{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.all_contestnts_number, .done_course_contestnts_number, .to_100ml, .money_of_contestants_number{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
 
 
 
