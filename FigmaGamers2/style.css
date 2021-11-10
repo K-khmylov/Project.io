@@ -7,7 +7,7 @@
 }
 
 .wrapper{
-    max-width: 1920px;
+    max-width: 1296px;
     margin: 0 auto;
 }
 
@@ -122,19 +122,19 @@ header .btn:hover{
 }
 
 .under_head_block{
-    height: 130px;
+    max-height: 100%;
     background-color:#201c1c ;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
 }
 
 .bought_course{
     cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 10px 30px;
-    width: 169px;
-    height: 44px;
+    max-width: 169px;
+    max-height: 44px;
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
     border-radius: 50px;
     text-align: center;
@@ -145,25 +145,26 @@ header .btn:hover{
     font-size: 16px;
     line-height: 150%;
     transition: backgroud 0.3s;
+
 }
 
 .bought_course:hover{
     background: linear-gradient(94.78deg, #a53830 11.19%, #3c093d 93.72%);
 }
 
+
 .contestants{
-    display: flex;
-    width: 251px;
-    height: 58px;
-    padding: 36px 62px;
-    margin-left: 562px;
+    max-width: 252px;
+
+    
 }
 
 .all_contestnts, .done_course_contestnts{
-   
+    background-color: white;
 }
 
 .all_contestnts_number, .done_course_contestnts_number{
+    
     max-width: 28px;
     max-height: 24px;   
 }
@@ -193,7 +194,7 @@ header .btn:hover{
 }
 
 .all_contestnts_number, .done_course_contestnts_number, .to_100ml, .money_of_contestants_number{
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
