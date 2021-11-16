@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 
+body {
+    background: rgb(36, 35, 35);
+}
+
 .page_wraper{
     max-width: 1920px;
     margin: 0 auto;
@@ -49,23 +53,29 @@ header .navigation .nav_link:hover{
     opacity: 1;
 }
 
-header .btn{
+.btn{
     cursor: pointer;
     font-family: Roboto, sans-serif;
     font-size: 16px;
     line-height: 150%;
     color: #FFFFFF;
     text-align: center;
-    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     border-radius: 50px;
     padding: 10px 30px;
     transition: all 0.3s;
 }
 
+.btn.primary {
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
 
-header .btn:hover{
+.btn.secondary {
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+
+.btn:hover{
     transform: scale(1.01);
-    background: linear-gradient(94.26deg, #a26ce0 9.51%, #4835c9 90.23%);
+    transition: 0.8;
 }
 
 .head_block{
@@ -122,68 +132,68 @@ header .btn:hover{
 }
 
 .under_head_block{
-    max-height: 100%;
     background-color:#201c1c ;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-
+    padding: 43px 32px;
 }
 
-.bought_course{
-    cursor: pointer;
-    padding: 10px 30px;
-    max-width: 169px;
-    max-height: 44px;
-    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
-    border-radius: 50px;
-    text-align: center;
+.under_head_inner_block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 81px;
+}
+
+.under_head_block .contestants {
+    min-width: 252px;
+}
+
+.under_head_block .type_of_contestants {
+    display: flex;
+    justify-content: space-between;
+}
+
+.under_head_block .type_of_contestants .contestnts_description {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 150%;
     color: #FFFFFF;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+    opacity: 0.4;
+}
+
+.under_head_block .type_of_contestants .contestnts_number {
+    font-family: Roboto;
     font-weight: bold;
     font-size: 16px;
     line-height: 150%;
-    transition: backgroud 0.3s;
-
+    color: #FFFFFF;
 }
 
-.bought_course:hover{
-    background: linear-gradient(94.78deg, #a53830 11.19%, #3c093d 93.72%);
+.under_head_block .money_line_block {
+    flex-grow: 1;
+}
+
+.under_head_block .money_line {
+    height: 6px;
+    background: #FFFFFF;   
+    position: relative; 
+}
+
+.under_head_block .money_line .value {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 60%;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
 }
 
 
-.contestants{
-    max-width: 252px;
-
-    
+.under_head_block .money_block {
+    display: flex;
+    justify-content: space-between;
 }
 
-.all_contestnts, .done_course_contestnts{
-    background-color: white;
-}
-
-.all_contestnts_number, .done_course_contestnts_number{
-    
-    max-width: 28px;
-    max-height: 24px;   
-}
-
-.all_contestnts{
-    max-width: 122px;
-    max-height: 24px;
-}
-
-.done_course_contestnts{
-    max-width: 193px;
-    max-height: 24px;
-}
-
-.number_of_contestants{
-    right: 0;
-}
-
-.all_contestnts, .done_course_contestnts, .money_of_contestants, .from_0{
+.under_head_block .money_block .money {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -193,7 +203,7 @@ header .btn:hover{
     opacity: 0.4;
 }
 
-.all_contestnts_number, .done_course_contestnts_number, .to_100ml, .money_of_contestants_number{
+.money_line_block, .done_course_contestnts_number, .money {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
