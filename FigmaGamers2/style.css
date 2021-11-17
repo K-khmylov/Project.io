@@ -237,22 +237,16 @@ header .btn:hover{
 /*======================================================COMPUTER_____BLOCK===================*/
 
 
-.computer{
-    padding: 48px 0;
+.computer {
     max-width: 1300px;
-    max-height: 600px;
-    margin-top: 152px;
+    margin-top: 200px;
     display: flex;
     justify-content: space-between;
-    
-    
+    column-gap: 82px;
 }
-/*
-.left_computer_block{
-    
-}*/
 
 .square{
+    flex-shrink: 0;
     width: 568px;
     height: 536px;
     background-color: none;
@@ -265,14 +259,11 @@ header .btn:hover{
 }
 
 .computer_photo{
-    transform: translate(40px, -450px);
-    
+    transform: translate(40px, 50px);
 }
 
 .computer_text{
-    flex-wrap: wrap;
-    padding: 69px 0 0px 82px;
-    
+    padding-top: 69px;
 }
 
 .computer_main_text{
@@ -301,14 +292,18 @@ header .btn:hover{
     header .navigation, header .btn{
         background: none;
     }
-
-
 }
 
 @media screen and (min-width: 640px) and (max-width: 1047px){
+    .computer {
+        flex-direction: column-reverse;
+        row-gap: 32px;
+        column-gap: 32px;
+        margin-top: 32px;
+    }
+
     .computer_text{
-        
-        padding: 0px 0px 0px 32px;
+        padding-top: 0;
         
     }
 }
