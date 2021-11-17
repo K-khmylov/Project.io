@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 
+body{
+    background-color: #180b0b;
+}
+
 .page_wraper{
     max-width: 1920px;
     margin: 0 auto;
@@ -43,6 +47,7 @@ header .navigation .nav_link{
     text-align: center;
     opacity: .7;
     transition: all 0.3s;
+    transition: 0.3s linear;
 }
 
 header .navigation .nav_link:hover{
@@ -122,12 +127,17 @@ header .btn:hover{
 }
 
 .under_head_block{
-    max-height: 100%;
     background-color:#201c1c ;
+    padding: 43px 32px;
+
+}
+
+.under_head_inner_block{
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 81px;
 }
 
 .bought_course{
@@ -153,37 +163,59 @@ header .btn:hover{
 }
 
 
-.contestants{
-    max-width: 252px;
-
-    
+.under_head_block .contestants{
+    min-width: 252px;    
 }
 
-.all_contestnts, .done_course_contestnts{
-    background-color: white;
+.under_head_block .type_of_contestants{
+    display: flex;
+    justify-content: space-between;
 }
 
-.all_contestnts_number, .done_course_contestnts_number{
-    
-    max-width: 28px;
-    max-height: 24px;   
+.under_head_block .type_of_contestants .done_course_contestnts{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.4;
+
 }
 
-.all_contestnts{
-    max-width: 122px;
-    max-height: 24px;
+.under_head_block .type_of_contestants .all_contestnts{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.under_head_block .money_line_block {
+    flex-grow: 1;
 }
 
-.done_course_contestnts{
-    max-width: 193px;
-    max-height: 24px;
+.under_head_block .money_line {
+    height: 6px;
+    background: #FFFFFF;   
+    position: relative; 
 }
 
-.number_of_contestants{
-    right: 0;
+.under_head_block .money_line .value {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 60%;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
 }
 
-.all_contestnts, .done_course_contestnts, .money_of_contestants, .from_0{
+
+.under_head_block .money_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.under_head_block .money_block .money {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -193,7 +225,7 @@ header .btn:hover{
     opacity: 0.4;
 }
 
-.all_contestnts_number, .done_course_contestnts_number, .to_100ml, .money_of_contestants_number{
+.money_line_block, .done_course_contestnts_number, .money {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -202,11 +234,82 @@ header .btn:hover{
     color: #FFFFFF;
 }
 
+/*======================================================COMPUTER_____BLOCK===================*/
+
+
+.computer{
+    padding: 48px 0;
+    max-width: 1300px;
+    max-height: 600px;
+    margin-top: 152px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+/*
+.left_computer_block{
+    
+}*/
+
+.square{
+    width: 568px;
+    height: 536px;
+    background-color: none;
+    border-radius: 0px;
+    border-width: 30px;
+    border-style: solid;
+    border-color: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%); /*не рабоатет*/
+    border-color: rgb(190, 31, 190);
+   
+}
+
+.computer_photo{
+    transform: translate(40px, -450px);
+    
+}
+
+.computer_text{
+    flex-wrap: wrap;
+    padding: 69px 0 0px 82px;
+    
+}
+
+.computer_main_text{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+    padding-bottom:45px ;
+    
+}
+
+.computer_second_text{
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+
 
 
 @media screen and (max-width: 1048px){
     header .navigation, header .btn{
         background: none;
+    }
+
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 1047px){
+    .computer_text{
+        
+        padding: 0px 0px 0px 32px;
+        
     }
 }
     
