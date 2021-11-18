@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    background-color: #180b0b;
+}
+
+.page_wraper{
+    max-width: 1920px;
+    margin: 0 auto;
+    
+}
+
+.wrapper{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+header{
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 32px;
+    position: absolute;
+    top: 0;
+}
+
+.header_wraper{
+    width: 100%;
+    max-width: 1760px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 0;
+}
+
+
+header .navigation{
+    display: flex;
+    column-gap: 56px;
+}
+
+header .navigation .nav_link{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-align: center;
+    opacity: .7;
+    transition: all 0.3s;
+    transition: 0.3s linear;
+}
+
+header .navigation .nav_link:hover{
+    opacity: 1;
+}
+
+header .btn{
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-align: center;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: all 0.3s;
+}
+
+
+header .btn:hover{
+    transform: scale(1.01);
+    background: linear-gradient(94.26deg, #a26ce0 9.51%, #4835c9 90.23%);
+}
+
+.head_block{
+    background-image: url(assets/main-screen__bgc.png);
+    background-position: center;
+    background-size: cover;
+    padding: 270px 32px 218px 32px;
+    
+}
+
+.head_block .title{
+    max-width: 920px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.head_block .date-block{
+    display: flex;
+    column-gap: 30px;
+    
+}
+
+.head_block .date-block .date{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color:  #121212;
+    
+}
+
+.head_block .date-block .date .date_number{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.head_block .date-block .date .date_description{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF; 
+    opacity: 0.4; 
+}
+
+.under_head_block{
+    background-color:#201c1c ;
+    padding: 43px 32px;
+
+}
+
+.under_head_inner_block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 81px;
+}
+
+.bought_course{
+    cursor: pointer;
+    padding: 10px 30px;
+    max-width: 169px;
+    max-height: 44px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    transition: backgroud 0.3s;
+
+}
+
+.bought_course:hover{
+    background: linear-gradient(94.78deg, #a53830 11.19%, #3c093d 93.72%);
+}
+
+
+.under_head_block .contestants{
+    min-width: 252px;    
+}
+
+.under_head_block .type_of_contestants{
+    display: flex;
+    justify-content: space-between;
+}
+
+.under_head_block .type_of_contestants .done_course_contestnts{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.4;
+
+}
+
+.under_head_block .type_of_contestants .all_contestnts{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.under_head_block .money_line_block {
+    flex-grow: 1;
+}
+
+.under_head_block .money_line {
+    height: 6px;
+    background: #FFFFFF;   
+    position: relative; 
+}
+
+.under_head_block .money_line .value {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 60%;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+
+
+.under_head_block .money_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.under_head_block .money_block .money {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.money_line_block, .done_course_contestnts_number, .money {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+/*======================================================COMPUTER_____BLOCK===================*/
+
+
+.computer {
+    max-width: 1300px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 82px;
+}
+
+.square{
+    flex-shrink: 0;
+    width: 568px;
+    height: 536px;
+    background-color: none;
+    border-radius: 0px;
+    border-width: 30px;
+    border-style: solid;
+    border-color: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%); /*не рабоатет*/
+    border-color: rgb(190, 31, 190);
+   
+}
+
+.computer_photo{
+    transform: translate(40px, 50px);
+}
+
+.computer_text{
+    padding-top: 69px;
+}
+
+.computer_main_text{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+    padding-bottom:45px ;
+    
+}
+
+.computer_second_text{
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+
+/*======================================================UNDER_____COMPUTER=================*/
+
+
+.main_info{
+    margin: 200px 0 80px 0;    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+.block_of_proffession{
+    padding-left: 50px;
+    display: flex;
+    max-width: 400px;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    
+
+}
+
+
+
+
+.photo_of_profession{
+    text-align: center;
+    
+   
+}
+
+.type_of_profession{
+    text-align: center;
+    
+}
+
+.description_fot_profession{
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1048px){
+    header .navigation, header .btn{
+        background: none;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1047px){
+    .computer {
+        flex-direction: column-reverse;
+        row-gap: 32px;
+        column-gap: 32px;
+        margin-top: 32px;
+    }
+
+    .computer_text{
+        padding-top: 0;
+        
+    }
+}
+    
+
