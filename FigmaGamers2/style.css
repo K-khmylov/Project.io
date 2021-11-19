@@ -304,17 +304,13 @@ header .btn:hover{
 }
 
 
+.profession{
+    display: flex;
+    justify-content: space-between;
+}
 
 .block_of_proffession{
-    padding-left: 50px;
-    display: flex;
     max-width: 400px;
-    column-gap: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
-  
-    
-
 }
 
 
@@ -322,18 +318,28 @@ header .btn:hover{
 
 .photo_of_profession{
     text-align: center;
-    
+   
    
 }
 
 .type_of_profession{
     text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+    padding: 60px 0 30px 0 ;
     
 }
 
 .description_fot_profession{
     text-align: center;
-    
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.8;
 }
 
 
