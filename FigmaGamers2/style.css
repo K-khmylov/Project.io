@@ -74,8 +74,8 @@ header .btn:hover{
 }
 
 .head_block{
-    background: url(assets/main-screen__bgc.png) no-repeat;
-    background-position: center;
+    background: url(assets/main-screen__bgc.png);
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 270px 32px 218px 32px;
